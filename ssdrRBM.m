@@ -24,6 +24,7 @@ error_return=zeros(1,maxepoch);
 mu=0.1;
 CL=SCSet;
 DL=DCSet;
+batchdata=graphenedata;
 [numcases numdims ]=size(batchdata);
   epoch=1;
  numbatches=1;
