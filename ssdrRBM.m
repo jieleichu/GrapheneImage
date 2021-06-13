@@ -11,8 +11,6 @@
 % batchdata -- the data that is divided into batches (numcases numdims numbatches)
 % restart   -- set to 1 if learning starts from beginning 
 function [ vis hid errorS] = ssdrRBM(graphenedata,numdims,numhid,SCSet,DCSet)
-%%CL is pairwise (hs,ht)���
-%%CC ���о��󣬵�һ�������ݱ�ţ��ڶ��д�ž�����, �ֲ�������
 epsilonw      = 0.1;   % Learning rate for weights 
 epsilonvb     = 0.1;   % Learning rate for biases of visible units 
 epsilonhb     = 0.1;   % Learning rate for biases of hidden units 
@@ -216,8 +214,6 @@ end;
  vis = negdata;
  errorS=error_return;
 
-
-%complete one time epoch,modify deltaW by adding MustLink and CannotLink
  
 
 
